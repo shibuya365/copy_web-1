@@ -1,0 +1,605 @@
+@media (max-width: 670px) {
+   /* 上部のメニュー */
+.head-menu {
+    display: grid;
+    grid-template:
+        "img ... nav" 30px
+        / 40px 1fr auto ;
+}
+
+.mup {
+    display: none;
+}
+
+.mdn {
+    display: none;
+}
+
+.menu-img {
+    width: 30px;
+    z-index: 10;
+}
+
+/* ハンバーガーメニュー */
+.nav-item {
+    font-size: 25px;
+    text-decoration: none;
+    color: white;
+    display: block;
+    text-align: center;
+}
+
+.nav-item span {
+    font-size: 15px;
+    color: #F79314;
+}
+.nav-item-btn {
+    font-size: 10px;
+    height: 40px;
+    width: 150px;
+    display: block;
+    line-height: 40px;
+    text-align: center;
+    margin: 0 auto;
+    color: white;
+    background-color: #F79314;
+    border-radius: 30px;
+
+}
+
+
+#nav-drawer {
+    grid-area: nav;
+    position: relative;
+  }
+  
+  /*チェックボックス等は非表示に*/
+  .nav-unshown {
+    display:none;
+  }
+  
+  /*アイコンのスペース*/
+  #nav-open {
+    display: inline-block;
+    width: 30px;
+    height: 22px;
+    vertical-align: middle;
+  }
+  
+  /*ハンバーガーアイコンをCSSだけで表現*/
+  
+  #nav-open span, #nav-open span:before, #nav-open span:after {
+    position: absolute;
+    height: 3px;/*線の太さ*/
+    width: 25px;/*長さ*/
+    border-radius: 3px;
+    background: #555;
+    display: block;
+    content: '';
+    cursor: pointer;
+  }
+  
+  #nav-open span:before {
+    bottom: -8px;
+  }
+  
+  #nav-open span:after {
+    bottom: -16px;
+  }
+  
+  /*閉じる用の薄黒カバー*/
+  
+  #nav-close {
+    display: none;/*はじめは隠しておく*/
+    position: fixed;
+    z-index: 99;
+    top: 0;/*全体に広がるように*/
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #222222;
+    opacity: 0;
+    transition: .3s ease-in-out;
+  }
+  
+  /*中身*/
+  
+  #nav-content {
+    overflow: auto;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 9999;/*最前面に*/
+    width: 100%;/*右側に隙間を作る（閉じるカバーを表示）*/
+    /* max-width: 330px;最大幅（調整してください） */
+    height: 100%;
+    background: #222222;/*背景色*/
+    transition: .3s ease-in-out;/*滑らかに表示*/
+    -webkit-transform: translateX(+200%);
+    transform: translateX(+200%);/*左に隠しておく*/
+    opacity: 0.7;
+    border-top: 50px solid white;
+
+  }
+  
+  /*チェックが入ったらもろもろ表示*/
+  #nav-input:checked ~ #nav-close {
+    display: block;/*カバーを表示*/
+    opacity: .5;
+  }
+  
+  #nav-input:checked ~ #nav-content {
+    -webkit-transform: translateX(0%);
+    transform: translateX(0%);/*中身を表示（右へスライド）*/
+    box-shadow: 6px 0 25px rgba(0,0,0,.15);
+  }
+  
+/* ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー  */
+
+.title {
+    position: relative;
+}
+.top-hero {
+    position: absolute;
+    top: 0px;
+    right: -50px;
+    z-index: 0;
+    width: 800px;
+    margin-left: auto;
+}
+
+
+
+
+
+
+.main-head {
+    display: grid;
+    grid-template:
+        ".. .. .." 100px
+        ".. i5 .."
+        ".. i1 .."
+        ".. t2 .."
+        ".. l3 .."
+        ".. t4 .." 
+        / 50px 1fr 50px ;
+}
+
+/* 1 イメージ */
+.head-i1 {
+    grid-area: i1;
+    width: 250px;
+    z-index: 10;
+    margin: 0 auto;
+}
+
+/* ２　テキスト */
+.head-t2 {
+    grid-area: t2;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    z-index: 10;
+}
+
+/* ３　リンクイメージ */
+.head-l3 {
+    grid-area: l3;
+    font-size: 15px;
+    height: 60px;
+    width: 250px;
+    display: inline-block;
+    padding: 15px;
+    margin: 0 auto;
+    color: white;
+    background-color: #F79314;
+    border-radius: 50px;
+    text-align: center;
+    text-decoration: none;
+    z-index: 10;
+}
+
+/* ４　テキスト  */
+.head-t4 {
+    grid-area: t4;
+    font-size: 5px;
+    max-width: 500px;
+    z-index: 10;
+}
+
+/* ５　イメージ */
+.head-i5 {
+    grid-area: i5;
+    z-index: 10;
+    
+}
+
+
+/* ポテパンキャンプとは---------------------------- */
+
+.con-is {
+    display: grid;
+    grid-template:
+        "p1"  
+        "p2"
+        "a3"
+        ".." 30px ;
+    }
+
+.is-p1 {
+    grid-area: p1;
+    margin: 0 auto;
+    color: white;
+    text-align: left;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.is-p2 {
+    grid-area: p2;
+    color: white;
+    max-width: 500px;
+    text-align: left;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.is-a3 {
+    grid-area: a3;
+    color: #F79314;
+    margin: 0 auto;
+    height: 60px;
+    width: 250px;
+    display: inline-block;
+    border-radius: 50px;
+    text-align: center;
+    text-decoration: none;
+    background-color: white;
+    padding-top: 10px;
+    font-weight: bold;
+
+}
+
+
+/* ポテパンキャンプの特徴　-------------------------------- */
+
+.t-p1 {
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.t-p2 {
+    text-align: center;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.n1-h1 {
+    margin-top: 80px;
+    font-size: 20px;
+}
+
+/* ------------------------------------- */
+
+.example-list {
+    display: grid;
+    grid-template:
+        ".. ln ln .."
+        "i1 i1 i2 i2"
+        "i3 i3 i4 i4"
+        "i5 i5 i6 i6"
+        "i7 i7 i8 i8" ;
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px;
+
+}
+
+/* --------------------------------------------- */
+
+
+.n2-h1 {
+    font-size: 20px;
+}
+
+/* --------------------------- */
+
+.n2-exe-list {
+    display: grid;
+    grid-template:
+        "i1 i1"
+        "i2 i3" ;
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+/* スライドショー　----------------------------------------- */
+
+.n3-enginers-list {
+    position: relative;
+    display: grid;
+    grid-template:
+    "e1 e2 e3"
+    / 100% 100% 100% ;
+}
+
+.flame {
+    width: 50px;
+    position: absolute;
+    top: 0px;
+    line-height: 300px;
+}
+
+.flame-left {
+    border-left: 30px solid #222222;
+    left: -40px;
+    
+}
+
+.flame-right {
+    border-right: 30px solid #222222;
+    right: -40px;
+}
+
+.flame-right:hover .n3-enginers-list {
+    transform: translateX(-100%);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ーーーーーーーーーーーーーーーーーーーーー */
+
+.ct-p1 {
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.ct-p2 {
+    text-align: center;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+
+
+/* ーーーーーーーーーーーーーーーーーーーーー */
+
+
+/* コース１ */
+
+.course-a1 {
+    display: grid;
+    grid-template:
+        ".. s1  .."
+        ".. p11 .." 
+        ".. p12 .."   
+        ".. p13 .." 
+        ".. p14 .." 
+        / 50px 1fr 50px;
+}
+
+.c-square1 {
+    width: 400px;
+    margin: -10px auto 20px auto;
+}
+
+.course-title1 {
+    font-size: 20px;
+}
+
+.course-name1 {
+    height: 15px;
+    width: 100px;
+    font-size: 10px;
+}
+/* ーーーーーーーーーーーーーーーーーーーーー */
+/* コース２ */
+.course-a2 {
+    display: grid;
+    grid-template:
+        ".. s2  .."
+        ".. p21 .." 
+        ".. p22 .."   
+        ".. p23 .." 
+        ".. p24 .."
+        / 50px 1fr 50px;
+}
+
+
+.c-square2 {
+    width: 400px;
+    margin: -10px auto 20px auto;
+}
+
+.course-title2 {
+    font-size: 20px;
+}
+
+.course-name2 {
+    height: 15px;
+    width: 100px;
+    font-size: 10px;
+}
+
+/* コース３ */
+.course-a3 {
+    display: grid;
+    grid-template:
+        ".. s3  .."
+        ".. p31 .." 
+        ".. p32 .."   
+        ".. p33 .." 
+        ".. p34 .."
+         / 50px 1fr 50px;
+}
+
+.c-square3 {
+    width: 400px;
+    margin: -10px auto 20px auto;
+}
+
+.course-title3 {
+    font-size: 20px;
+}
+
+.course-name3 {
+    height: 15px;
+    width: 100px;
+    font-size: 10px;
+}
+
+/* 想い　--------------------------- */
+
+.wt-p1 {
+    font-size: 23px;
+}
+
+/* ----------------------------------------- */
+
+.wish-main {
+    position: relative;
+    padding-bottom: 100px;
+}
+
+.wish-white-box {
+    background-color: white;
+    max-width: 800px;
+    padding: 20px 20px 20px 20px;
+}
+
+.wwb-p1 {
+    position: absolute;
+    top: -55px;
+    color: #F79314;
+    font-size: 32px;
+    font-weight: bold;
+    display: block;
+}
+
+.wish-image {
+    /* float: right; */
+    position: static;
+    top: 0px;
+    left: opx;
+    margin: 0 auto;
+}
+
+.wish-p1 {
+    position: absolute;
+    top: 40px;
+    left: 30px;
+    font-size: 14px;
+    color: white;
+    font-weight: bold;
+}
+
+.wish-p1 span {
+    font-size: 24px;
+}
+/* .wish-p2 {
+    margin: 0 auto;
+    padding: 0px;
+    max-width: 700px;
+} */
+
+
+/* 受講生の声　------------------------------------------------ */
+
+.vt-p1 {
+    font-size: 28px;
+}
+
+
+/* --------------------------------------------------------------------------------- */
+
+.voice-main-menbers {
+    display: grid;
+    grid-template:
+        "m1"
+        "m2"
+        "m3" ;
+}
+
+/* 他のサービス　--------------------------------------------------------------------------------- */
+
+.ot-p1 {
+    /* padding-top: 50px; */
+    /* text-align: center; */
+    font-size: 25px;
+}
+
+/* --------------------------------------------------------------------------------- */
+
+.others-main {
+    display: grid;
+    /* max-width: 1100px; */
+    grid-template:
+        "a11"
+        "a12"
+        "a21"
+        "a22"
+        "a31"
+        "a32" ;
+}
+
+/* headder ----------------------------- */
+
+.footer {
+    display: grid;
+    grid-template:
+        "... ... ... ..." 50px
+        "... a05 ... ..."
+        "... ... ... ..." 20px
+        "... a06 ... ..."
+        "... ... ... ..." 20px
+        "... a07 ... ..."
+        "... ... ... ..." 20px
+        "... a08 ... ..."
+        "... ... ... ..." 20px
+        "... a09 ... ..."
+        "... ... ... ..." 20px
+        "... a10 ... ..."
+        "... ... ... ..." 20px
+        "... i11 i11 ..."
+        "... ... ... ..." 20px
+        "... a01 a01 ..."        
+        "... ... ... ..." 20px
+        "... p02 p02 ..."
+        "... ... ... ..." 20px
+        "... a03 a04 ..."
+        "... ... ... ..." 20px
+        "... p12 p12 ..."
+        / 50px 1fr 1fr 50px ;
+}
+
+.f-i01 {
+    margin-left: 60px;
+}
+
+
+/* --------------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------------- */

@@ -1,0 +1,1530 @@
+* {
+    box-sizing: border-box;
+  }
+
+  .container {
+    max-width: 1100px;
+    padding: 0px 0px;
+    margin: 0 auto;
+}
+
+/* header--------------------------------------------------- */
+
+
+/* 上部のメニュー */
+.head-menu {
+    display: grid;
+    grid-template:
+        "img ... u1 ... u2 ... u3 ... u4 ... u5 ... u6 ... m7" 30px
+        "... ... d1 ... d2 ... d3 ... d4 ... d5 ... d6 ... m7" 30px
+        / 100px 1fr auto 20px auto 20px auto 20px auto 20px auto 20px auto 5px 100px ;
+}
+
+.menu-img {
+    grid-area: img;
+    z-index: 10;
+}
+
+.menu-img img {
+    width: 190px;
+}
+
+.mup {
+    display: block;
+    font-weight: bold;
+    text-align: center;
+    font-size: 13px;
+    padding: 10px 0px;
+    text-decoration: none;
+    color: #222222;
+    z-index: 10;
+}
+.mdn {
+    font-weight: bold;
+    text-align: center;
+    color: #222222;
+    font-size: 9px;
+    text-decoration: none;
+    z-index: 10;
+}
+
+.menu-u1 {
+    grid-area: u1;
+}
+
+.menu-u2 {
+    grid-area: u2;
+}
+
+.menu-u3 {
+    grid-area: u3;
+}
+
+.menu-u4 {
+    grid-area: u4;
+}
+
+.menu-u5 {
+    grid-area: u5;
+}
+
+.menu-u6 {
+    grid-area: u6;
+}
+
+.menu-d1 {
+    grid-area: d1;
+}
+
+.menu-d2 {
+    grid-area: d2;
+}
+
+.menu-d3 {
+    grid-area: d3;
+}
+
+.menu-d4 {
+    grid-area: d4;
+}
+
+.menu-d5 {
+    grid-area: d5;
+}
+
+.menu-d6 {
+    grid-area: d6;
+}
+
+.menu-7 {
+    grid-area: m7;
+    font-size: 10px;
+    height: 40px;
+    width: 150px;
+    display: inline-block;
+    line-height: 40px;
+    padding: 0px 0px;
+    margin: 0 auto;
+    color: white;
+    background-color: #F79314;
+    border-radius: 30px;
+}
+
+/* ２ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー */
+
+/* ヒーロ画像 */
+.top-hero {
+    position: absolute;
+    top: 0px;
+    right: 0px;    
+    z-index: 0;
+    width: 1700px;
+    margin-left: auto;
+}
+
+.main-head {
+    display: grid;
+    grid-template:
+        ".. .." 100px
+        "i1 i5"
+        "t2 i5"
+        "l3 i5"
+        ".. .." 150px
+        "t4 t4" 
+        / 400px auto ;
+}
+
+/* 1 イメージ */
+.head-i1 {
+    grid-area: i1;
+    width: 400px;
+    z-index: 10;
+}
+
+/* ２　テキスト */
+.head-t2 {
+    grid-area: t2;
+    font-size: 20px;
+    font-weight: bold;
+    z-index: 10;
+}
+
+.head-t2 span {
+    color: #F79314;
+    z-index: 10;
+}
+
+/* ３　リンクイメージ */
+.head-l3 {
+    grid-area: l3;
+    font-size: 17px;
+    height: 60px;
+    width: 350px;
+    display: inline-block;
+    padding: 15px;
+    margin: 0 auto;
+    color: white;
+    background-color: #F79314;
+    border-radius: 50px;
+    text-align: center;
+    text-decoration: none;
+    z-index: 10;
+}
+
+/* ４　テキスト  */
+.head-t4 {
+    grid-area: t4;
+    font-size: 5px;
+    max-width: 500px;
+    z-index: 10;
+    color: #888888;
+}
+
+/* ５　イメージ */
+.head-i5 {
+    grid-area: i5;
+    z-index: 10;
+}
+
+/* exe ーーーーーーーーーーーーーーーーーーーーーーーーーーーーー */
+.is {
+    background-color: #F79314;
+}
+
+.con-is {
+    display: grid;
+    grid-template:
+        "p1 a3"  
+        "p2 .."
+        ".. .." 30px ;
+    margin: 110px;
+}
+
+.is-p1 {
+    grid-area: p1;
+    color: white;
+    text-align: left;
+    font-size: 45px;
+    font-weight: bold;
+}
+
+.is-p2 {
+    grid-area: p2;
+    color: white;
+    max-width: 500px;
+    text-align: left;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.is-a3 {
+    grid-area: a3;
+    color: #F79314;
+    margin-top: 100px;
+    height: 60px;
+    width: 350px;
+    display: inline-block;
+    border-radius: 50px;
+    text-align: center;
+    text-decoration: none;
+    background-color: white;
+    padding-top: 10px;
+    font-weight: bold;
+
+}
+
+/* -------------------------------------------- */
+
+/* .main-t {
+    display: grid;
+    grid-template:
+        "p1"
+        "p2"
+        "d3"
+        ".." 80px
+        "p4"
+        "d5" ;
+} */
+
+
+.t-p1 {
+    text-align: center;
+    font-size: 43px;
+    font-weight: bold;
+}
+
+.t-p2 {
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.t-d3 {
+    border: 3px solid #F79314;
+    width: 50px;
+    margin: 0 auto 100px auto;
+}
+
+/*main-n1 */
+
+.main-n1 {
+    background-color: #fcfaf5;
+    position: relative;
+    padding: 30px;
+    border-radius: 20px;
+}
+
+.n1-01 {
+    position: absolute;
+    /* top: -200; */
+    left: calc(50% - 50px);
+    color: #F79314;
+    text-align: center;
+    width: 100px;
+    height: 100px;
+    font-size: 35px;
+    font-weight: bold;
+    line-height: 100px;
+    background-color: #fcfaf5;
+    border-radius: 50%;
+    display: block;
+    margin: -60px auto 0 auto;
+}
+
+.n1-h1 {
+    margin-top: 80px;
+    text-align: center;
+    font-size: 30px;
+}
+
+/* .n1-p2 {
+    text-align: left;
+} */
+
+.example-list {
+    display: grid;
+    grid-template:
+        ".. .. .. ln ln .. .. .."
+        "i1 i1 i2 i2 i3 i3 i4 i4"
+        "i5 i5 i6 i6 i7 i7 i8 i8" ;
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px;
+
+}
+.el-title {
+    /* grid-area: t1; */
+    text-align: right;
+    font-size: 15px;
+    float: left;
+}
+
+.el-panda {
+    /* grid-area: t2; */
+    height: 25px;
+    grid-area: pa;
+    float: right;
+}
+.el-line {
+    grid-area: ln;
+    border-bottom: 3px solid #F79314;
+}
+
+.el-i1{
+    grid-area: i1;
+    width: 100%;
+}
+
+.el-i2{
+    grid-area: i2;
+    width: 100%;
+}
+
+.el-i3{
+    grid-area: i3;
+    width: 100%;
+}
+
+.el-i4{
+    grid-area: i4;
+    width: 100%;
+}
+
+.el-i5{
+    grid-area: i5;
+    width: 100%;
+}
+
+.el-i6{
+    grid-area: i6;
+    width: 100%;
+}
+
+.el-i7{
+    grid-area: i7;
+    width: 100%;
+}
+
+.el-i8{
+    grid-area: i8;
+    width: 100%;
+}
+
+/* ------------------------------------- */
+
+.main-02 {
+    background-color: #fcfaf5;
+    position: relative;
+    padding: 30px;
+    border-radius: 20px;
+    margin-top: 100px;
+}
+
+.n2-02 {
+    position: absolute;
+    /* top: -200; */
+    left: calc(50% - 50px);
+    color: #F79314;
+    text-align: center;
+    width: 100px;
+    height: 100px;
+    font-size: 35px;
+    font-weight: bold;
+    line-height: 100px;
+    background-color: #fcfaf5;
+    border-radius: 50%;
+    display: block;
+    margin: -80px auto 0 auto;
+}
+
+.n2-h1 {
+    font-size: 30px;
+    text-align: center;
+}
+
+/* .n2-p2 {
+    text-align: center;
+} */
+
+.n2-p2 span {
+    font-size: 25px;
+    font-weight: bold;
+    color: #F79314;
+}
+
+/* --------------------------- */
+
+.n2-exe-list {
+    display: grid;
+    grid-template:
+        "i1 i2 i3"
+        / 1fr 1fr 1fr ;
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.n2-i1 {
+    grid-area: i1;
+    width: 100%;
+}
+
+.n2-i2 {
+    grid-area: i2;
+    width: 100%;
+}
+
+.n2-i3 {
+    grid-area: i3;
+    width: 100%;
+}
+
+/* エンジニアの例　ーーーーーーーーーーーーーーーーーーーーー */
+
+.main-03 {
+    background-color: #fcfaf5;
+    position: relative;
+    padding: 30px;
+    border-radius: 20px;
+    margin-top: 100px;
+}
+
+.n3-03 {
+    position: absolute;
+    /* top: -200; */
+    left: calc(50% - 50px);
+    color: #F79314;
+    text-align: center;
+    width: 100px;
+    height: 100px;
+    font-size: 35px;
+    font-weight: bold;
+    line-height: 100px;
+    background-color: #fcfaf5;
+    border-radius: 50%;
+    display: block;
+    margin: -80px auto 0 auto;
+}
+
+.n3-h1 {
+    font-size: 30px;
+    text-align: center;
+}
+
+.n3-p2 {
+    text-align: center;
+}
+
+.n3-p2 span {
+    font-size: 25px;
+    font-weight: bold;
+    color: red;
+}
+
+/* --------------------------------- */
+
+.n3-enginers-list {
+    display: grid;
+    grid-template:
+    ".. .. .. .. .. .. .." 10px
+    ".. e1 .. e2 .. e3 .."
+    ".. .. .. .. .. .. .." 10px
+    / 10px 1fr 10px 1fr 10px 1fr 10px ;
+}
+
+.item-eng1 {
+    border-radius: 20px;
+    grid-area: e1;
+    background-color: white;
+    display: grid;
+    grid-template:
+    ".. .. .. .." 10px
+    ".. l1 l1 .."
+    ".. e1 c1 .."
+    ".. e1 r1 .."
+    ".. p1 p1 .."
+    ".. .. .. .." 10px
+    / 10px 1fr 1fr 10px ;
+}
+
+.eng-com-logo1 {
+    grid-area: l1;
+    height: 30px;
+    margin: 10px auto;
+    background-color: white;
+}
+
+.eng1 {
+    grid-area: e1;
+    width: 100px;
+    margin: 0 auto 0 auto;
+    background-color: white;
+}
+
+.eng-com1 {
+    grid-area: c1;
+    background-color: white;
+}
+
+.eng-rail1 {
+    grid-area: r1;
+    background-color: white;
+}
+
+.eng-plain1 {
+    grid-area: p1;
+    padding: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 20px;
+    background-color: #f6f6f6;
+}
+
+.item-eng2 {
+    border-radius: 20px;
+    grid-area: e2;
+    background-color: white;
+    display: grid;
+    grid-template:
+    ".. .. .. .." 10px
+    ".. l2 l2 .."
+    ".. e2 c2 .."
+    ".. e2 r2 .."
+    ".. p2 p2 .."
+    ".. .. .. .." 10px
+    / 10px 1fr 1fr 10px ;
+}
+
+.eng-com-logo2 {
+    grid-area: l2;
+    height: 30px;
+
+    margin: 10px auto;
+    background-color: white;
+}
+
+.eng2 {
+    grid-area: e2;
+    width: 100px;
+    margin: 0 auto 0 auto;
+    background-color: white;
+}
+
+.eng-com2 {
+    grid-area: c2;
+    background-color: white;
+}
+
+.eng-rail2 {
+    grid-area: r2;
+    background-color: white;
+}
+
+.eng-plain2 {
+    grid-area: p2;
+    padding: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 20px;
+    background-color: #f6f6f6;
+}
+
+.item-eng3 {
+    border-radius: 20px;
+    grid-area: e3;
+    background-color: white;
+    display: grid;
+    grid-template:
+    ".. .. .. .." 10px
+    ".. l3 l3 .."
+    ".. e3 c3 .."
+    ".. e3 r3 .."
+    ".. p3 p3 .."
+    ".. .. .. .." 10px
+    / 10px 1fr 1fr 10px ;
+}
+
+.eng-com-logo3 {
+    grid-area: l3;
+    height: 30px;
+    margin: 10px auto;
+    background-color: white;
+}
+
+.eng3 {
+    grid-area: e3;
+    margin: 0 auto 0 auto;
+    width: 100px;
+    background-color: white;
+}
+
+.eng-com3 {
+    grid-area: c3;
+    background-color: white;
+}
+
+.eng-rail3 {
+    grid-area: r3;
+    background-color: white;
+}
+
+.eng-plain3 {
+    grid-area: p3;
+    padding: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 20px;
+    background-color: #f6f6f6y;
+}
+
+/* コース タイトル　----------------------------------- */
+
+.ct-p1 {
+    text-align: center;
+    font-size: 43px;
+    font-weight: bold;
+}
+
+.ct-p2 {
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.ct-d3 {
+    border: 3px solid #F79314;
+    width: 50px;
+    margin: 0 auto 100px auto;  
+}
+
+/* 　------------------------------------------ */
+
+.course-bear {
+    background-color: #f6f6f6;
+    background-image: url(bg-section-top-course.png);
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-size: 300px;
+
+}
+
+/* コース１ */
+
+.course-a1 {
+    display: grid;
+    background-color: white;
+    grid-template:
+        "s1 p11" 
+        "s1 p12"   
+        "s1 p13" 
+        "s1 p14"
+        / 300px 1fr ;
+    text-decoration: none;
+    margin-bottom: 40px;
+}
+
+.c-square1 {
+    grid-area: s1;
+    border: 3px solid #f75307;
+    width: 300px;
+    margin: 20px 0 20px -40px;
+}
+
+.course-title1 {
+    font-size: 24px;
+    text-align: center;
+    color: #222222;
+    margin: 10px auto;
+}
+
+.course-name1 {
+    border-radius: 10px;
+    height: 20px;
+    width: 120px;
+    font-size: 14px;
+    text-align: center;
+    margin: 0px auto;
+    color: white;
+    display: block;
+    background-color:#f75307;
+}
+
+.course-p11 {
+    grid-area: p11;
+    font-size: 16px;
+    color: #f75307;
+    font-weight: bold;
+    margin: 0px;
+}
+
+.course-p12 {
+    grid-area: p12;
+    height: 25px;
+    width: 96px;
+    text-align: center;
+    display: inline-block;
+    background-color: #222222;
+    color: white;
+    border-radius: 12px;
+    font-size: 14px;
+    margin: 0px;
+}
+
+.course-p13 {
+    grid-area: p13;
+    color: #222222;
+    margin: 0px;
+    line-height: 30px;
+}
+
+.course-p13 span {
+    color: #F79314;
+    line-height: 30px;
+    font-size: 30px;
+}
+
+.course-p14 {
+    grid-area: p14;
+    text-align: right;
+    color: #999999;
+    margin: 0px ;
+}
+
+.course-p14 span {
+    color: #F79314;
+}
+
+/* コース２ */
+.course-a2 {
+    display: grid;
+    background-color: white;
+    grid-template:
+        "s2 p21" 
+        "s2 p22"   
+        "s2 p23" 
+        "s2 p24"
+        / 300px 1fr ;
+    text-decoration: none;
+    margin-bottom: 40px;
+}
+
+
+.c-square2 {
+    grid-area: s2;
+    border: 3px solid #49c766;
+    width: 300px;
+    margin: 20px 0 20px -40px;
+}
+
+.course-title2 {
+    font-size: 24px;
+    text-align: center;
+    color: #222222;
+    margin: 10px auto;
+}
+
+.course-name2 {
+    border-radius: 10px;
+    height: 20px;
+    width: 120px;
+    font-size: 14px;
+    text-align: center;
+    margin: 0px auto;
+    color: white;
+    display: block;
+    background-color: #49c766;
+}
+
+.course-p21 {
+    grid-area: p21;
+    font-size: 16px;
+    color: #49c766;
+    font-weight: bold;
+    margin: 0px;
+}
+
+.course-p22 {
+    grid-area: p22;
+    height: 25px;
+    width: 96px;
+    text-align: center;
+    display: inline-block;
+    background-color: #222222;
+    color: white;
+    border-radius: 12px;
+    font-size: 14px;
+    margin: 0px;
+}
+
+.course-p23 {
+    grid-area: p23;
+    color: #222222;
+    margin: 0px;
+    line-height: 30px;
+}
+
+.course-p23 span {
+    color: #F79314;
+    line-height: 30px;
+    font-size: 30px;
+}
+
+.course-p24 {
+    grid-area: p24;
+    text-align: right;
+    color: #999999;
+    margin: 0px ;
+}
+
+.course-p24 span {
+    color: #F79314;
+}
+
+/* コース３ */
+.course-a3 {
+    display: grid;
+    background-color: white;
+    grid-template:
+        "s3 p31" 
+        "s3 p32"   
+        "s3 p33" 
+        "s3 p34"
+        / 300px 1fr ;
+    text-decoration: none;
+}
+
+.c-square3 {
+    grid-area: s3;
+    border: 3px solid #F79314;
+    width: 300px;
+    margin: 20px 0 20px -40px;
+}
+
+.course-title3 {
+    font-size: 24px;
+    text-align: center;
+    color: #222222;
+    margin: 10px auto;
+}
+
+.course-name3 {
+    border-radius: 10px;
+    height: 20px;
+    width: 120px;
+    font-size: 14px;
+    text-align: center;
+    margin: 0px auto;
+    color: white;
+    display: block;
+    background-color: #F79314;
+}
+
+.course-p31 {
+    grid-area: p31;
+    font-size: 16px;
+    color: #F79314;
+    font-weight: bold;
+    margin: 0px;
+}
+
+.course-p32 {
+    grid-area: p32;
+    height: 25px;
+    width: 96px;
+    text-align: center;
+    display: inline-block;
+    background-color: #222222;
+    color: white;
+    border-radius: 12px;
+    font-size: 14px;
+    margin: 0px;
+}
+
+.course-p33 {
+    grid-area: p33;
+    color: #222222;
+    margin: 0px;
+    line-height: 30px;
+}
+
+.course-p33 span {
+    color: #F79314;
+    line-height: 30px;
+    font-size: 30px;
+}
+
+.course-p34 {
+    grid-area: p34;
+    text-align: right;
+    color: #999999;
+    margin: 0px ;
+}
+
+.course-p34 span {
+    color: #F79314;
+}
+
+/* コースのボトムのボタン */    
+.course-bottom-btn {
+    width: 300px;
+    height: 60px;
+    display: block;
+    text-decoration: none;
+    color: white;
+    background-color: #F79314;
+    border-radius: 30px;
+    margin: 100px auto;
+}
+.cbc-s1 {
+    color: white;
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.cbc-s2 {
+    color: white;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* 想い　--------------------------- */
+.wish {
+    background-color: #fcfaf5;
+}
+
+.wt-p1 {
+    text-align: center;
+    font-size: 43px;
+    font-weight: bold;
+}
+
+.wt-p2 {
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.wt-d3 {
+    border: 3px solid #F79314;
+    width: 50px;
+    margin: 0 auto 100px auto;  
+}
+
+.wish-main {
+    position: relative;
+    padding-bottom: 100px;
+}
+
+.wish-white-box {
+    background-color: white;
+    max-width: 800px;
+    padding: 20px 200px 20px 20px;
+}
+
+.wwb-p1 {
+    position: absolute;
+    top: -55px;
+    color: #F79314;
+    font-size: 32px;
+    font-weight: bold;
+    display: block;
+}
+
+.wish-image {
+    /* float: right; */
+    position: absolute;
+    top: 30px;
+    right: 0px;
+}
+
+.wish-p1 {
+    position: absolute;
+    top: 40px;
+    right: 230px;
+    font-size: 14px;
+    color: white;
+    font-weight: bold;
+}
+
+.wish-p1 span {
+    font-size: 24px;
+}
+
+/* 受講生の声　------------------------------------------------ */
+
+
+.vt-p1 {
+    text-align: center;
+    font-size: 43px;
+    font-weight: bold;
+}
+
+.vt-p2 {
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.vt-d3 {
+    border: 3px solid #F79314;
+    width: 50px;
+    margin: 0 auto 100px auto;  
+}
+
+.vt-btn {
+    width: 300px;
+    height: 60px;
+    display: block;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    background-color: #F79314;
+    border-radius: 30px;
+    margin: 100px auto;
+}
+
+.vt-btn span {
+    font-size: 14px;
+}
+
+/* --------------------------------- */
+.voice-main-menbers {
+    display: grid;
+    grid-template:
+        "m1 m2 m3" ;
+}
+
+/* --------------------------------- */
+
+/* １人目紹介 */
+
+.voice-main-menber1 {
+    grid-area: m1;
+    display: grid;
+    grid-template:
+        "a1"
+        "a2" ;
+    position: relative;
+    margin: 0 auto;
+}
+
+.vmm1-a1 {
+    grid-area: a1;
+}
+
+.vmm1-i1 {
+    object-fit: cover;
+    width: 320px;
+    height: 320px;
+    transition: all 1s;
+}
+
+.vmm1-i1:hover {
+    object-fit: cover;
+    transform: scale(1.05);
+} 
+
+
+.vmm1-p1 {
+    position: absolute;
+    top: 240px;
+    left: 10px;
+    font-size: 16px;
+    color: #F79314;
+}
+
+.vmm1-p2 {
+    position: absolute;
+    width: 300px;
+    top: 270px;
+    left: 10px;
+    font-size: 16px;
+    color: white;
+    font-weight: bold;
+    border-top: 3px solid white;
+}
+
+.vmm1-p2 span {
+    font-size: 12px;
+}
+
+.vmm1-p3 {
+    position: absolute;
+    top: 270px;
+}
+
+.vmm1-a2 {
+    grid-area: a2;
+    max-width: 320px;
+    font-size: 15px;
+    font-weight: bold;
+    color: #222222;
+    text-decoration: none;
+}
+
+/* 　２人目 */
+.voice-main-menber2 {
+    grid-area: m2;
+    display: grid;
+    grid-template:
+        "a1"
+        "a2" ;
+    position: relative;
+    margin: 0 auto;
+
+}
+
+.vmm2-a1 {
+    grid-area: a1;
+}
+
+.vmm2-i1 {
+    object-fit: cover;
+    width: 320px;
+    height: 320px;
+    transition: all 1s;
+}
+
+.vmm2-i1:hover {
+    object-fit: cover;
+    transform: scale(1.05);
+} 
+
+
+.vmm2-p1 {
+    position: absolute;
+    top: 240px;
+    left: 10px;
+    font-size: 16px;
+    color: #F79314;
+}
+
+.vmm2-p2 {
+    position: absolute;
+    width: 300px;
+    top: 270px;
+    left: 10px;
+    font-size: 16px;
+    color: white;
+    font-weight: bold;
+    border-top: 3px solid white;
+}
+
+.vmm2-p2 span {
+    font-size: 12px;
+}
+
+.vmm2-p3 {
+    position: absolute;
+    top: 270px;
+}
+
+.vmm2-a2 {
+    grid-area: a2;
+    color: #222222;
+    max-width: 320px;
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: none;
+}
+/* 　３人目 */
+
+.voice-main-menber3 {
+    grid-area: m3;
+    display: grid;
+    grid-template:
+        "a1"
+        "a2" ;
+    position: relative;
+    margin: 0 auto;
+
+}
+
+.vmm3-a1 {
+    grid-area: a1;
+}
+
+.vmm3-i1 {
+    object-fit: cover;
+    width: 320px;
+    height: 320px;
+    transition: all 1s;
+}
+
+.vmm3-i1:hover {
+    object-fit: cover;
+    transform: scale(1.05);
+} 
+
+
+.vmm3-p1 {
+    position: absolute;
+    top: 240px;
+    left: 10px;
+    font-size: 16px;
+    color: #F79314;
+}
+
+.vmm3-p2 {
+    position: absolute;
+    width: 300px;
+    top: 270px;
+    left: 10px;
+    font-size: 16px;
+    color: white;
+    font-weight: bold;
+    border-top: 3px solid white;
+}
+
+.vmm3-p2 span {
+    font-size: 12px;
+}
+
+.vmm3-p3 {
+    position: absolute;
+    top: 270px;
+}
+
+.vmm3-a2 {
+    grid-area: a2;
+    color: #222222;
+    max-width: 320px;
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* 他のサービス　----------------------------- */
+
+.others {
+    background-color: #f6f6f6;
+    background-image: url(bg-section-top-course.png);
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-size: 300px;
+}
+
+.ot-p1 {
+    padding-top: 50px;
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.ot-p2 {
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.ot-d3 {
+    border: 3px solid #F79314;
+    width: 50px;
+    margin: 0 auto 100px auto;  
+}
+
+/* ---------------------------------------------- */
+.om-box {
+    display: block;
+    border: 3px solid #F79314;
+    background-color: white;
+    padding: 50px 40px;
+    border-radius: 20px;
+}
+
+.om-img {
+    width: 250px;
+}
+
+.om-txt {
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #222222;
+}
+
+.others-main {
+    display: grid;
+    max-width: 1100px;
+
+    grid-template:
+        "a11 .. a21 .. a31"
+        "a12 .. a22 .. a32"
+        / auto 40px auto 40px auto ;
+}
+
+.om1-a1 {
+    grid-area: a11;
+    margin: 0 auto;
+}
+
+.om1-a2 {
+    grid-area: a12;
+    margin: 0 30px;
+}
+
+.om2-a1 {
+    grid-area: a21;
+    margin: 0 auto;
+
+}
+
+.om2-a2 {
+    grid-area: a22;
+    margin: 0 30px;
+}
+
+.om3-a1 {
+    grid-area: a31;
+    margin: 0 auto;
+
+}
+
+.om3-a2 {
+    grid-area: a32;
+    margin: 0 30px;
+}
+
+.other1 {
+    transition: all 0.3s;
+}
+
+.other2 {
+    transition: all 0.3s;
+}
+
+.other3 {
+    transition: all 0.3s;
+}
+
+.other1:hover {
+    transform: scale(1.05);
+    color: #F79314;
+}
+
+.other2:hover {
+    transform: scale(1.05);
+    color: #49c766;
+}
+
+.other3:hover {
+    transform: scale(1.05);
+    color: #222222;
+}
+
+/* headder ----------------------------- */
+
+footer {
+    background-color: #F79314;
+}
+
+.footer {
+    display: grid;
+    grid-template:
+        "... ... ... ... ..." 60px
+        "a01 a01 ... a05 ..." 1fr
+        "p02 p02 ... a06 ..." 1fr
+        "p02 p02 ... a07 ..." 1fr
+        "p02 p02 ... a08 ..." 1fr
+        "a03 a04 ... a09 i11" 1fr
+        "... ... ... a10 i11" 1fr
+        "p12 p12 ... ... ..." 1fr
+        / 100px 100px 1fr 1fr 1fr ;
+}
+
+.f-a01 {
+    grid-area: a01;
+    transition: all 0.3s;
+}
+
+.f-a01:hover {
+    opacity: 0.5;
+}
+
+.f-i01 {
+    width: 280px;
+    height: 30px;
+}
+
+.f-p02 {
+    grid-area: p02;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+}
+
+.f-a03 {
+    grid-area: a03;
+    transition: all 0.3s;
+    margin: 0 10px 0 auto;
+}
+
+.f-a03:hover {
+    opacity: 0.5;
+
+}
+
+.f-i03 {
+    width: 60px;
+    height: 60px;
+}
+
+.f-a04 {
+    grid-area: a04;
+    transition: all 0.3s;
+    margin: 0 auto 0 10px; 
+}
+
+.f-a04:hover {
+    opacity: 0.5;
+}
+
+.f-i04 {
+    width: 60px;
+    height: 60px;
+}
+
+.f-a05 {
+    grid-area: a05;
+    font-size: 16px;
+    color: white;
+    text-decoration: none;
+}
+
+.f-a06 {
+    grid-area: a06;
+    font-size: 16px;
+    color: white;
+    text-decoration: none;
+}
+
+.f-a07 {
+    grid-area: a07;
+    font-size: 16px;
+    color: white;
+    text-decoration: none;
+}
+
+.f-a08 {
+    grid-area: a08;
+    font-size: 16px;
+    color: white;
+    text-decoration: none;
+}
+
+.f-a09 {
+    grid-area: a09;
+    font-size: 16px;
+    color: white;
+    text-decoration: none;
+}
+
+.f-a10 {
+    grid-area: a10;
+    font-size: 16px;
+    color: white;
+    text-decoration: none;
+}
+
+.f-i11 {
+    grid-area: i11;
+    width: 121px;
+    height: 70px;
+    margin: 0 auto;
+}
+
+.f-p12 {
+    grid-area: p12;
+    font-size: 12px ;
+    color: white;
+    margin: 0 auto;
+}
+
+footer {
+    position: relative;
+}
+.f-top {
+    position: absolute;
+    top: -25px;
+    right: 10px;
+    display: inline-block;
+    background-color: white;
+    text-decoration: none;
+    text-align: center;
+    line-height: 50px;
+    color: #F79314;
+    font-size: 20px;
+    font-weight: bold;
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
+    transform: rotate(90deg);
+}
